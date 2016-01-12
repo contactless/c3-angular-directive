@@ -160,9 +160,9 @@ function ChartAxisXTick() {
             tick.format = d3.format(format);
         }
 
-        var formatTime = attrs.formatTime;
+        var formatTime = attrs.tickFormatTime;
         if (formatTime) {
-            tick.format = d3.time.format(format);
+            tick.format = d3.time.format(formatTime);
         }
 
         chartCtrl.addXTick(tick);
